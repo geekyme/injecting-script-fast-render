@@ -1,0 +1,22 @@
+<head>
+  <title>shawn</title>
+</head>
+
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <form>
+  	<input type="text">
+  	<input type="submit" value="Click" />
+  </form> 
+  {{#each list}}
+  	<p>{{text}}</p>
+  {{/each}}
+</template>
+
+<template name="layout">
+	<hr>
+	{{yield}}
+	<hr>
+</template>
